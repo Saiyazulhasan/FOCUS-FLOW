@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow - Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">📝 FocusFlow</div>
+    <ul class="nav-links">
+      <li><a href="#tasks">Tasks</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to FocusFlow</h1>
+    <p>Stay productive and track your tasks easily 🚀</p>
+    <a href="#tasks" class="cta-btn">Get Started</a>
+  </section>
+
+  <!-- Tasks Section -->
+  <section id="tasks" class="tasks-section">
+    <div class="app">
+      <h2>Your Tasks</h2>
+      <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Add a new task..." />
+        <button id="addBtn">Add</button>
+      </div>
+      <ul id="todoList"></ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About FocusFlow</h2>
+    <p>This is a simple todo app built with HTML, CSS, and JavaScript.</p>
+  </section>
+  <!-- Tasks Section -->
+<section id="tasks" class="tasks-section">
+  <div class="app">
+    <h2>Your Tasks</h2>
+    <div class="todo-input">
+      <input type="text" id="todoInput" placeholder="✍️ Add a new task..." />
+      <button id="addBtn">➕ Add</button>
+    </div>
+    <ul id="todoList"></ul>
+  </div>
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

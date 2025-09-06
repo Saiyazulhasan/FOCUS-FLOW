@@ -1,0 +1,215 @@
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #4facfe;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: white;
+  color: #4facfe;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Tasks Section */
+.tasks-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.app {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+}
+
+.app h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+/* Tasks Section */
+.tasks-section {
+  background: #f0f4f9;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.app h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #2d3436;
+}
+
+/* Input + Button */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #dcdde1;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.3);
+}
+
+.todo-input button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-input button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+/* Task List */
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+#todoList li {
+  background: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+#todoList li:hover {
+  background: #eef6ff;
+  transform: translateY(-2px);
+}
+
+#todoList li button {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#todoList li button:hover {
+  background: darkred;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
